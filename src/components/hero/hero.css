@@ -1,0 +1,196 @@
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    position: relative;
+    /* padding-top: 60px; */
+    /* background-color: #f7d98e; */
+    /* height: 100vh !important; */
+    /* padding: 0; */
+    /* margin: 5px; */
+    top: 50% !important;
+    transition: all 0.3s ease;
+    padding-bottom: 60px;
+    padding-top: 0px !important;
+    gap: 20px;
+}
+/* .dark-mode .hero,
+.dark-mode .navbar,
+.dark-mode body, */
+.dark-mode #root {
+    background-color: #000000; /* Dark background color */
+    color: #fcfcfc; /* Light text color */
+    transition: all 0.5s ease-in-out;
+}
+
+.shine-h1 {
+    font-size: 50px;
+    text-align: center;
+    /* font-family: monospace; */
+    font-weight: bold;
+    /* background-color: transparent !important; */
+    margin: 5px;
+}
+.fa-brands{
+    font-size: 100px;
+}
+
+
+
+/* h1 {
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  } */
+  
+  h1 span {
+    transition: 0.5s ease-out;
+  }
+  h1 span:hover {
+    color: #eb7f19;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+
+  /* .dark-mode{
+    background-color: black;
+    color: white;
+  } */
+
+
+  @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+/* Base */
+
+.shine-h2 {
+  position: relative;
+  /* color: hsl(27, 98%, 50%) !important; */
+  font-weight: bold!important;
+  /* font-family: "Anonymous Pro", monospace!important; */
+  letter-spacing: 7px!important;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  /* text-shadow: 0 0 20px white; */
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+    margin: 0;
+  padding: 0;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 410px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 14%, 99%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+.shine-h1 {
+  color: hsl(0, 0%, 2%) !important; /* Blue color */
+  font-weight: bold !important;
+  letter-spacing: 7px !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(to left, #0f0c29, #302b63, #24243e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+  margin: 0;
+  padding: 0;
+}
+  
+.shine-h1 {
+    /* padding: 64px; */
+    /* background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%); */
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 10s infinite linear !important;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: -600px;
+    }
+    /* 60% {
+      background-position: 600px;
+    } */
+    100% {
+      background-position: 600px;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    overflow: hidden; /* Ensure the gradient is contained within the button */
+    position: relative; /* Positioning context for the pseudo-element */
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px rgba(250, 250, 250, 0.5); /* Add the box shadow effect */
+  transition: all 0.3s ease; /* Apply transition for smooth animation */
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  /* #hero-logo{
+    font-size: 35px;
+  } */
+  #Home{
+    padding: 100px 0;
+    /* padding-bottom: 100px; */
+  }
+  .hero{
+    gap: 50px;
+  }
+
+  .shine-h1{
+    font-size: 25px;
+  }
+  .shine-h2{
+    font-size: 16px;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+
+
+
+}

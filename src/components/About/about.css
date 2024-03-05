@@ -1,0 +1,116 @@
+.About {
+    background-color: white;
+    padding: 15px;
+    /* border-radius: 15px; */
+
+}
+
+.About h2 {
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: permanent marker;
+    text-shadow: 5px orangered;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 60%;
+    border: 1px solid rgb(46, 45, 45);
+    /* display: flex; */
+    flex-direction: column;
+    height: fit-content;
+    align-self: center !important;
+
+}
+
+.card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Add a box shadow */
+    transition:box-shadow 0.3s ease-out;
+}
+
+.img-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-basis: 25%;
+
+}
+
+.img-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Add a box shadow */
+    transition:box-shadow 0.3s ease-out;
+}
+
+
+.cardimg {
+    /* height: 300px; */
+    object-fit: cover;
+    align-self: center !important;
+    justify-self: center !important;
+}
+
+/* .cardimg:hover{
+    transform:scale(0.9);
+    transition: transform 0.3s ease-in-out;
+} */
+
+.card-header {
+    background-color: rgb(189, 187, 187);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    
+}
+
+.card-body p {
+    margin: 10px;
+    padding: 12.5px;
+    /* color: black !important; */
+}
+
+.card-body span {
+    /* font-size: 1.6rem; */
+}
+
+.skills-badge {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-badge i {
+    font-size: 50px;
+}
+.wave{
+    margin: 5px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+    .about-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+}
